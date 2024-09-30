@@ -38,8 +38,6 @@ public:
         int pu=findUParent(u);
         int pv=findUParent(v);
         if(pu==pv) return;
-        if(ranked[pu]<ranked[pv])
-            parent[pu]=pv;
         if(sized[pu]<sized[pv])
         {
             parent[pu]=pv;
